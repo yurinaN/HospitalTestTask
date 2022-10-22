@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.App", "Hospital.App\Hospital.App.csproj", "{5E85E016-001C-48B3-A4C1-53881CAAAF45}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4263A2BB-413C-4AB8-B28C-7000675435A7} = {4263A2BB-413C-4AB8-B28C-7000675435A7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hopital.DataLayer", "Hopital.DataLayer\Hopital.DataLayer.csproj", "{4263A2BB-413C-4AB8-B28C-7000675435A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{5E85E016-001C-48B3-A4C1-53881CAAAF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E85E016-001C-48B3-A4C1-53881CAAAF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E85E016-001C-48B3-A4C1-53881CAAAF45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4263A2BB-413C-4AB8-B28C-7000675435A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4263A2BB-413C-4AB8-B28C-7000675435A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4263A2BB-413C-4AB8-B28C-7000675435A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4263A2BB-413C-4AB8-B28C-7000675435A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
