@@ -12,7 +12,7 @@ namespace Hopital.DataLayer.Repositories
             this.readHospital = readHospital;
         }
 
-        public Patient Get(Guid id)
+        public Patient? Get(Guid id)
         {
             return readHospital.Get<Patient>()
                 .FirstOrDefault(patient => patient.Id == id);

@@ -13,11 +13,11 @@ namespace Hopital.DataLayer.Context
             this.configuration = configuration;
         }
 
-        public DbSet<Cabinet> Cabinets { get; set; }
-        public DbSet<HealthLocality> HealthLocalities { get; set; }
-        public DbSet<LocalDoctor> LocalDoctors { get; set; }
-        public DbSet<Patient> Patients { get; set; }
-        public DbSet<Specialization> Specializations { get; set; }
+        public DbSet<Cabinet> Cabinets => Set<Cabinet>();
+        public DbSet<HealthLocality> HealthLocalities => Set<HealthLocality>();
+        public DbSet<LocalDoctor> LocalDoctors => Set<LocalDoctor>();
+        public DbSet<Patient> Patients => Set<Patient>();
+        public DbSet<Specialization> Specializations => Set<Specialization>();
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

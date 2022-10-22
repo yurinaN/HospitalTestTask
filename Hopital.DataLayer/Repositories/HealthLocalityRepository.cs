@@ -12,10 +12,16 @@ namespace Hopital.DataLayer.Repositories
             this.readHospital = readHospital;
         }
 
-        public HealthLocality Get(Guid id)
+        public HealthLocality? Get(Guid id)
         {
             return readHospital.Get<HealthLocality>()
                 .FirstOrDefault(locality => locality.Id == id);
+        }
+
+        public IQueryable<HealthLocality> GetByIds(IEnumerable<Guid> ids)
+        {
+            return readHospital.Get<HealthLocality>()
+                .Where(locality => ids.Contains(locality.Id));
         }
     }
 }

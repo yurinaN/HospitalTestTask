@@ -12,7 +12,7 @@ namespace Hospital.App.Controllers
         private readonly IPatientModelBuilder patientModelBuilder;
         private readonly IPatientModelHandler patientModelHandler;
 
-        public PatientsController(IPatientModelBuilder patientModelBuilder, 
+        public PatientsController(IPatientModelBuilder patientModelBuilder,
             IPatientModelHandler patientModelHandler)
         {
             this.patientModelBuilder = patientModelBuilder;
@@ -27,10 +27,9 @@ namespace Hospital.App.Controllers
         /// <param name="page"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<PageModel<PatientListItemModel>> Get([FromQuery] OrderingForm orderingForm, int itemsCount = 5, 
-            [RegularExpression(@"^[0-9]*[1-9]+$|^[1-9]+[0-9]*$", ErrorMessage = "Число должно быть больше 0")] int page = 1)
+        public async Task<PageModel<PatientListItemModel>> Get([FromQuery] PatientGetListParamsModel paramsModel)
         {
-            return await patientModelBuilder.GetAsync(orderingForm, itemsCount, page);
+            return await patientModelBuilder.GetAsync(paramsModel);
         }
 
         /// <summary>
