@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace Hopital.DataLayer
+namespace Hopital.DataLayer.Context
 {
     public class HospitalContext : DbContext
     {
