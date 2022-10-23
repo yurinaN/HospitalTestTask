@@ -1,7 +1,6 @@
 ﻿using Hospital.App.Models.Patients;
 using Hospital.Core.Models.Common;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 
 namespace Hospital.App.Controllers
 {

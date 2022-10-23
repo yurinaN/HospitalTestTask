@@ -2,7 +2,7 @@
 
 namespace Hopital.DataLayer.Entities
 {
-    public class LocalDoctor : IHospitalEntity, IIdentifiable
+    public class Doctor : IHospitalEntity, IIdentifiable
     {
         public Guid Id { get; set; }
         public Guid CabinetId { get; set; }

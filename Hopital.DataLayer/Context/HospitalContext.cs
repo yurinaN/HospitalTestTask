@@ -15,7 +15,7 @@ namespace Hopital.DataLayer.Context
 
         public DbSet<Cabinet> Cabinets => Set<Cabinet>();
         public DbSet<HealthLocality> HealthLocalities => Set<HealthLocality>();
-        public DbSet<LocalDoctor> LocalDoctors => Set<LocalDoctor>();
+        public DbSet<Doctor> Doctors => Set<Doctor>();
         public DbSet<Patient> Patients => Set<Patient>();
         public DbSet<Specialization> Specializations => Set<Specialization>();
 
